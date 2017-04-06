@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html  lang="zh-hant">
+
+<head>
+  <meta  charset="utf-8">
+  <title>103703005_hw1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAfxkoig9rmr8xCZ-OAOncOVnF2krWX5Us",
+    authDomain: "sna-hw3-b4243.firebaseapp.com",
+    databaseURL: "https://sna-hw3-b4243.firebaseio.com",
+    projectId: "sna-hw3-b4243",
+    storageBucket: "sna-hw3-b4243.appspot.com",
+    messagingSenderId: "27140170169"
+  };
+  firebase.initializeApp(config);
+
+   var storageRef = firebase.storage().ref();
+  
+  storageRef.child('main.JPG').getDownloadURL().then(function (url) {
+                document.getElementById('pic_main').src = url;
+  });      
+  storageRef.child('001.JPG').getDownloadURL().then(function (url) {
+                document.getElementById('pic_one').src = url;
+  });
+  storageRef.child('002.JPG').getDownloadURL().then(function (url) {
+                document.getElementById('pic_two').src = url;
+  });
+  storageRef.child('003.JPG').getDownloadURL().then(function (url) {
+                document.getElementById('pic_three').src = url;
+  });
+  storageRef.child('004.JPG').getDownloadURL().then(function (url) {
+                document.getElementById('pic_four').src = url;
+  });
+  storageRef.child('005.jpg').getDownloadURL().then(function (url) {
+                document.getElementById('pic_five').src = url;
+  });
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="jq.js"></script>
+<script src="index.js"></script>  
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body >
+
+  <h1>全新滋味 全新玩法！方吉系列新作《菇菇的巢》試玩介紹</h1>
+  <h3>作者:巴哈特約編輯 一鐵</h3>
+  <h4><i>2017-03-15 16:04:58</i></h4>
+  <h5>遊戲介紹</h5>
+  <p>還記得半夜設鬧鐘，就只為了叫醒自己採收菇菇嗎？
+    如今那款讓人長期睡眠不足的遊戲終於推出全新玩法的新作
+   <b>《菇菇的巢》</b>（iOS / Android），準備好再一次壓榨自己的肝功能嗎？</p>
+  <div><img class="set" id="pic_main" alt="game"></div>
+  <p>這次的新作品《<b>菇菇的巢</b>》是一款生活密著型的菇菇觀察遊戲，
+     當然這個生活密著就是要三不五時打開遊戲看ㄧ看菇菇們在做甚麼，
+     隨時準備採收他們製造出來的物品。</p>
+  <div><img  class="set" id="pic_one" alt="001"></div>
+  <p>一開始「茸瑠」的巢只有最基本的東西，像是賣帥氣石項鍊的「手作工房」，
+     玩家能在「委託板」販賣這些「帥氣石項鍊」來賺錢，藉此為菇巢建立起更多的設施，
+     像是蓋「鋸根場」製作繩索用的材料「樹根」或是蓋房子用的材料「圓木」，
+     未來還會有「麵包烘焙坊」、「公園」等等各種設施。
+  <br><br>有了各種設施，接下來當然要想辦法招募更多的居民囉，利用地表上的「旅人休息站」
+     可以花錢和材料請各種身懷絕技的菇菇前來入住，
+     當然這裡可不是花錢請這些菇菇來住爽的，嘿嘿。</p>
+  <div><img  class="set" id="pic_two" alt="002"></div>
+  <p>當菇巢有了居民之後，就能請他們進入「鼴鼠洞穴」探險，
+     獲得一些不能透過生產獲得的材料像是「黏土」或是「石塊」，
+     而要獲得不同的材料就要看這些菇菇本身的能力夠不夠，
+     像是某些道具會要求力量 60 以上才能獲得，不夠的話就拿不到囉。</p>
+  <div><img  class="set" id="pic_three" alt="003"></div>
+  <p>此外居民們還會自動自發的去各種設施幫忙，獲得他們幫忙的設施製造東西的速度都會稍微增加，
+     像是原本製造「樹根」要兩分鐘，居民來幫忙一次就能減少 10 秒鐘左右的生產時間，
+     居民越多受到幫助的機會也就更多了。
+  <br><br>遊戲中還有許多的任務目標要玩家們完成，只要完成任務目標就能提升階級，
+     解鎖更多的新設施和菇菇。等級提升後還能將菇巢繼續往地底拓展，獲得更多的大空間。
+     而且玩家們還能購買許多的「裝飾物品」為菇巢裝潢或是更改菇巢背景，
+     打造出各種不同風格的《<b>菇菇的巢</b>》喔。</p>
+
+  <p><a href="https://www.youtube.com/watch?v=L5wtQqPkp_s" target="_blank">
+    遊戲宣傳youtube影片連結點我</a></p>
+
+  <h5>遊戲下載</h5>
+  <ol style="list-style-type:circle">
+     <li> <a href="https://itunes.apple.com/jp/app/id1154399628" target="_blank">
+       iOS 版下載連結（免費）</a></li>
+
+     <li> <a href="https://play.google.com/store/apps/details?id=jp.co.beeworks.funghisden" target="_blank">
+       Android 版下載連結（免費）</a></li>
+  </ol>
+<h5>延伸閱讀</h5>
+<p><a href="https://gnn.gamer.com.tw/4/144364.html" target="_blank">
+【試玩】動作遊戲《Slime Climbing》介紹 操縱史萊姆挑戰充滿機關的高塔！</a></p>
+
+<form action="">
+名稱:<br>
+<input type="text" name="id">
+<br>
+內容:<br>
+<input type="text" name="cont">
+<input type='button' name='submit' value='送出' onclick='processFormData();' />
+</form>
+<br>
+
+<span id="Block">
+  <span id="title">側邊廣告<br>!!!!!!</span>
+  <a target="_blank" href="http://www.shusp.com/wp-content/uploads/2015/12/Zeon.full_.962739.jpg"><br>吉翁萬歲!<br>
+  <img class="XXX" id="pic_five" alt="005">
+  </a>
+</span>
+<div id="gotop">
+ <button id="top" type="button" class="btn btn-info btn-lg" > TOP^</button>
+</div>
+
+<div id ="changef">
+    <button onclick="small()">small</button>
+    <button onclick="medium()">medium</button>
+    <button onclick="large()">large</button>
+</div>
+
+  <div><table>
+     <tr>
+       <th>參考資料</th>
+       <th>網址</th>
+     </tr>
+     <tr>
+       <td>巴哈姆特GNN新聞</td>
+       <td> <a href="https://gnn.gamer.com.tw/8/144628.html" target="_blank">https://gnn.gamer.com.tw/8/144628.html</a></td>
+     </tr>
+     <tr>
+       <td>w3schools</td>
+       <td><a href="https://www.w3schools.com/default.asp" target="_blank">https://www.w3schools.com/default.asp</a></td>
+     </tr>
+     <tr>
+       <td>教學| HTML + CSS 加入浮動式自訂連結區塊</td>
+       <td><a href="http://weilife.pixnet.net/blog/post/374276588-%E6%95%99%E5%AD%B8-%7C-html-%2B-css-%E5%8A%A0%E5%85%A5%E6%B5%AE%E5%8B%95%E5%BC%8F%E8%87%AA%E8%A8%82%E9%80%A3%E7%B5%90%E5%8D%80%E5%A1%8A"
+         target="_blank">http://weilife.pixnet.net/blog/post/374276588-%E6%95%99%E5%AD%B8-%7C-html-%2B-css-%E5%8A%A0%E5%85%A5%E6%B5%AE%E5%8B%95%E5%BC%8F%E8%87%AA%E8%A8%82%E9%80%A3%E7%B5%90%E5%8D%80%E5%A1%8A</a></td>
+         <tr>
+        <td>吉翁圖片</td>
+        <td> <a href="http://www.shusp.com/wp-content/uploads/2015/12/Zeon.full_.962739.jpg" target="_blank">http://www.shusp.com/wp-content/uploads/2015/12/Zeon.full_.962739.jpg</a></td>
+         </tr>
+   </table>
+  </div>
+
+
+</body>
+
+</html>

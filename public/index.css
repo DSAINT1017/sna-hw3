@@ -1,0 +1,92 @@
+body {
+  border-style: hidden;
+  width:1080px;
+  font-size:medium;
+}
+p:hover, h1:hover, a:hover {
+    background-color: yellow;
+}
+h1 {
+    color:blue;
+}
+h3{
+    color:#808080;
+}
+h5{
+    color:#808080;
+}
+div{
+   text-align: center;
+}
+p {
+    text-indent: 30px;
+    border: 1px solid powderblue;
+    border-left: 5px solid powderblue;
+    margin: 25px;
+
+
+}
+b{
+  color: rgb(107, 173, 255);
+
+}
+.set {
+    height:511px;
+    width:315px;
+}
+.XXX{
+  height:130px;
+  width:240px;
+}
+a{
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color:  #00FFFF ;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+table{
+  padding: 40px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+#Block{
+    position: fixed;
+    top: 30%;
+    right: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#Block:hover{
+    right: +20px;
+}
+#Block #title{
+    padding-right: 5px;
+}
+#gotop{
+  position: fixed;
+  top: 95%;
+  right: 35%;
+}
+#changef{
+  position: fixed;
+  top: 3%;
+  right: 35%;
+}
